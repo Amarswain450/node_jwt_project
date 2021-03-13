@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> navbar_link }}
+</head>
+
+<body>
+    <!-- Navbar Sectin -->
+    {{> navbar }}
+
+    <!-- Registration Form Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="registration_form">
+                    <form action="/register" method="POST">
+                    <div class="form-group">
+                        <input type="text" 
+                               class="form-control" 
+                               placeholder="Enter firstName" 
+                               id="firstName" 
+                               name="firstName">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" 
+                               class="form-control" 
+                               placeholder="Enter lastName" 
+                               id="lastName" 
+                               name="lastName">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" 
+                               class="form-control" 
+                               placeholder="Enter email" 
+                               id="email" 
+                               name="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" 
+                               class="form-control" 
+                               placeholder="Enter number" 
+                               id="phone" 
+                               name="phone">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" 
+                               class="form-control" 
+                               placeholder="Enter age" 
+                               id="age" 
+                               name="age">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" 
+                               class="form-control" 
+                               placeholder="Enter password" 
+                               id="password" 
+                               name="password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" 
+                               class="form-control" 
+                               placeholder="Enter password" 
+                               id="confirmPassword" 
+                               name="confirmPassword">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                    <a href="/login">Already have an account ?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    {{> footer_link }}
+</body>
+
+</html>
